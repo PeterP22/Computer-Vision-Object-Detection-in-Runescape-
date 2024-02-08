@@ -8,17 +8,17 @@ The project encompasses several stages including dataset generation, image annot
 
 ## Steps
 
-1. **Dataset Generation**: The first step involved generating a dataset of in-game screenshots. This dataset served as the basis for training the object detection model. For more details, refer to the `1_generate_dataset.ipynb` notebook.
+1. **Dataset Generation**: The first step involved generating a dataset of in-game screenshots. This dataset served as the basis for training the object detection model. `1_generate_dataset.ipynb` notebook.
 
 
-2. **Image Annotation**: The images were then manually annotated using the `makesense.ai` tool. This tool allows for custom annotation of images and exports the annotations in YOLO format, which is compatible with the YOLOv4 model. For more details, refer to the `2_label_dataset.ipynb` notebook.
+2. **Image Annotation**: The images were then manually annotated using the `makesense.ai` tool. This tool allows for custom annotation of images and exports the annotations in YOLO format, which is compatible with the YOLOv4 model. `2_label_dataset.ipynb` notebook.
    
     ![Dataset Generation](./readmeimages/annotations.png)
 
-3. **Model Training**: The annotated images were used to train a YOLOv4 Tiny model. The training was performed on Google Colab, leveraging its GPU capabilities for efficient computation. The Darknet open-source neural network framework was used for the implementation of YOLOv4. For more details, refer to the `3_yolo_model_training.ipynb` notebook.
+3. **Model Training**: The annotated images were used to train a YOLOv4 Tiny model. The training was performed on Google Colab, leveraging its GPU capabilities for efficient computation. The Darknet open-source neural network framework was used for the implementation of YOLOv4. `3_yolo_model_training.ipynb` notebook.
     ![Image Annotation](./readmeimages/darknet.png)
     
-4. **Model Implementation**: The trained model was then implemented for real-time object detection in the game using OpenCV. The model was able to detect and identify trees in the game in real-time. For more details, refer to the `4_yolo_opencv_detector.ipynb` notebook.
+4. **Model Implementation**: The trained model was then implemented for real-time object detection in the game using OpenCV. The model was able to detect and identify trees in the game in real-time. `4_yolo_opencv_detector.ipynb` notebook.
     ![Model Training](./readmeimages/image.png)
     ![Model Implementation](./readmeimages/terminaloutput.png)
 
@@ -30,9 +30,6 @@ The project encompasses several stages including dataset generation, image annot
 - Google Colab
 - Darknet
 - makesense.ai
-- win32gui
-- win32ui
-- win32con
 
 ## Results
 
